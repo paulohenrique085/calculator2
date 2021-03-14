@@ -5,229 +5,363 @@ class Calculator extends StatefulWidget {
   _CalculatorState createState() => _CalculatorState();
 }
 
-class _CalculatorState extends State<Calculator>
-    with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(vsync: this);
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
+class _CalculatorState extends State<Calculator> {
+  void _primeiroNselect(int number) {
+    print(number);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Calculator"),
-        backgroundColor: Colors.blue,
-      ),
-      body: Column(
-        children: [
-          Container(
-            color: Colors.black,
-            height: 100,
-            width: 600,
-          ),
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "1",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+      body: Padding(
+        padding: const EdgeInsets.only(
+          top: 30,
+        ),
+        child: Column(
+          children: [
+            Container(
+              color: Colors.black,
+              height: 100,
+              width: 440,
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "1",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(1),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "2",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "2",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(2),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "3",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "3",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(3),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "4",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.black,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "+",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () {},
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "5",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "4",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(4),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "6",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "5",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(5),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "7",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "6",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(6),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "8",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.black,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "-",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () {},
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 10,
-                  top: 10,
-                ),
-                child: Container(
-                  color: Colors.blue,
-                  width: 65,
-                  height: 65,
-                  child: GestureDetector(
-                    child: Center(
-                      child: Text(
-                        "9",
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "7",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
                       ),
+                      onTap: () => _primeiroNselect(7),
                     ),
-                    onTap: () {},
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "8",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () => _primeiroNselect(8),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "9",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () => _primeiroNselect(9),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.black,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "÷",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.red,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "AC",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.blue,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "0",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () => _primeiroNselect(0),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.red,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "=",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 10,
+                    top: 10,
+                  ),
+                  child: Container(
+                    color: Colors.black,
+                    width: 65,
+                    height: 65,
+                    child: GestureDetector(
+                      child: Center(
+                        child: Text(
+                          "x",
+                          style: TextStyle(color: Colors.white, fontSize: 45),
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
