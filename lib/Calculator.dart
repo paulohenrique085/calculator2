@@ -26,7 +26,7 @@ class _CalculatorState extends State<Calculator>
     return Scaffold(
       appBar: AppBar(
         title: Text("Calculator"),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.blue,
       ),
       body: Column(
         children: [
@@ -43,7 +43,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -63,7 +63,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -83,7 +83,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -107,7 +107,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -127,7 +127,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -147,7 +147,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -171,7 +171,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -191,7 +191,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
@@ -211,7 +211,7 @@ class _CalculatorState extends State<Calculator>
                   top: 10,
                 ),
                 child: Container(
-                  color: Colors.orange,
+                  color: Colors.blue,
                   width: 65,
                   height: 65,
                   child: GestureDetector(
